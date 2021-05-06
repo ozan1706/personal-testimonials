@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #ecf2f8;
+  font-size: 13px;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.testimonials {
+  width: 80%;
+  margin: 6em auto;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "testimonial-1 testimonial-1 testimonial-2 testimonial-3" "testimonial-4 testimonial-5 testimonial-5 testimonial-3";
+  gap: 25px;
+}
+
+.testimonials .testimonial-1 {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 80% 0;
+  border-radius: 5px;
+  padding: 1.7em;
+  background-color: #7541c8;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: testimonial-1;
+}
+
+.testimonials .testimonial-1 h2 {
+  margin-bottom: 1.2em;
+}
+
+.testimonials .testimonial-2 {
+  border-radius: 5px;
+  padding: 1.7em;
+  background-color: #48556a;
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: testimonial-2;
+}
+
+.testimonials .testimonial-2 h2 {
+  margin-bottom: 1.2em;
+}
+
+.testimonials .testimonial-3 {
+  border-radius: 5px;
+  padding: 1.7em;
+  background-color: white;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: testimonial-3;
+}
+
+.testimonials .testimonial-3 h2 {
+  margin-bottom: 1.2em;
+}
+
+.testimonials .testimonial-4 {
+  border-radius: 5px;
+  padding: 1.7em;
+  background-color: white;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: testimonial-4;
+}
+
+.testimonials .testimonial-4 h2 {
+  margin-bottom: 1.2em;
+}
+
+.testimonials .testimonial-5 {
+  border-radius: 5px;
+  padding: 1.7em;
+  background-color: #19212e;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: testimonial-5;
+}
+
+.testimonials .testimonial-5 h2 {
+  margin-bottom: 1.2em;
+}
+
+.testimonials .small-profile {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "image name" "image student-statues";
+  -ms-grid-columns: max-content;
+      grid-template-columns: -webkit-max-content;
+      grid-template-columns: max-content;
+  margin-bottom: 1em;
+}
+
+.testimonials .small-profile .name {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.testimonials .small-profile img {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: image;
+  border-radius: 50%;
+  width: 35px;
+  margin-right: 1em;
+}
+
+.testimonials .testimonial-1,
+.testimonials .testimonial-2,
+.testimonials .testimonial-5 {
+  color: white;
+}
+
+.testimonials .testimonial-1 img,
+.testimonials .testimonial-2 img,
+.testimonials .testimonial-5 img {
+  border: 2px solid rgba(255, 255, 255, 0.7);
+}
+
+.testimonials .testimonial-1 .student-statues,
+.testimonials .testimonial-2 .student-statues,
+.testimonials .testimonial-5 .student-statues {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.testimonials .testimonial-1 p,
+.testimonials .testimonial-2 p,
+.testimonials .testimonial-5 p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.testimonials .testimonial-3 img,
+.testimonials .testimonial-4 img {
+  border: 2px solid rgba(0, 0, 0, 0.7);
+}
+
+.testimonials .testimonial-3 .student-statues,
+.testimonials .testimonial-4 .student-statues {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.testimonials .testimonial-3 p,
+.testimonials .testimonial-4 p {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 1024px) {
+  .testimonials {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonials .testimonial-3 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .testimonials .testimonial-1 {
+    background-position: 95% 0;
+  }
+}
